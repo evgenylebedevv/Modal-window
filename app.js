@@ -27,9 +27,7 @@ function detachModalEvents() {
 }
 
 function handleEscape(event) {
-    if (event.key === 'Escape') {
-        closeModal()
-    }
+    event.key === 'Escape' ? closeModal() : false
 }
 
 function handleOutside(event) {
